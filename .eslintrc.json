@@ -1,0 +1,16 @@
+{
+    "parserOptions":{
+      "ecmaVersion":2018
+    },
+    "extends":["eslind: recommended","prettier"],
+    "env":{
+      "es6":true,
+      "node":true,
+      /* Jest es un framework para pruebas */
+      "jest":true
+    },
+    "rules":{
+      "no-console":"warn"
+    }
+  }
+  

@@ -1,0 +1,32 @@
+###
+POST http://localhost:3000/api/v1/facts/fact HTTP/1.1
+Content-Type: application/json
+
+{
+    "trademark":"Mazda",
+    "model": "2",
+    "features":{
+        "license":{"name":"ADB123"},
+        "color": ["Blue","Red"]
+    },
+    "ref":{ 
+        "serial":{ 
+            "chassis":"12789ABC" ,
+            "motor": 12340,
+        },
+        "tires": "R15",
+    }
+}
+
+###
+GET http://localhost:3000/api/v1/facts HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/facts/62337f47b9a96cf3eb9ee082 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/facts/62337e74b9a96cf3eb9ee079 HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/v1/facts/62337e74b9a96cf3eb9ee079 HTTP/1.1
